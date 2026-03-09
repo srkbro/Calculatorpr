@@ -45,39 +45,52 @@ from{transform:translateY(0)}
 to{transform:translateY(80px)}
 }
 
-/* NAVBAR */
+/* HEADER */
 
-.navbar{
+.header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.site-title{
+font-family:Orbitron;
+font-size:32px;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+/* NAV BUTTONS */
+
+.nav-buttons{
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
-max-width:1000px;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+max-width:700px;
 margin:auto;
 }
 
-.logo{
-font-family:Orbitron;
-font-size:22px;
-letter-spacing:2px;
-}
-
-.navbar nav a{
-color:white;
-margin:10px;
+.nav-btn{
+padding:10px 18px;
+border-radius:12px;
 text-decoration:none;
-font-size:14px;
-opacity:.8;
+color:white;
+font-family:Orbitron;
+font-size:13px;
+background:linear-gradient(135deg,#00f7ff,#a100ff);
+box-shadow:0 0 10px rgba(161,0,255,.6);
+transition:0.3s;
 }
 
-.navbar nav a:hover{
-color:#00f7ff;
+.nav-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px #a100ff;
 }
 
 /* HERO */
 
 .hero{
-margin-top:80px;
+margin-top:50px;
 }
 
 .hero h1{
@@ -90,15 +103,10 @@ margin-bottom:10px;
 opacity:.7;
 }
 
-/* TOOL SECTION */
+/* TOOL GRID */
 
 .tools{
 margin-top:60px;
-}
-
-.section-title{
-font-family:Orbitron;
-margin-bottom:30px;
 }
 
 .tool-grid{
@@ -168,8 +176,7 @@ display:block;
 margin-bottom:6px;
 }
 
-input,
-textarea{
+input,textarea{
 width:100%;
 padding:14px;
 border-radius:10px;
@@ -268,12 +275,9 @@ color:#00f7ff;
 
 @media (max-width:768px){
 
-.navbar{
-flex-direction:column;
-}
-
-.navbar nav{
-margin-top:10px;
+.nav-buttons{
+flex-direction:row;
+flex-wrap:wrap;
 }
 
 .result-container{
