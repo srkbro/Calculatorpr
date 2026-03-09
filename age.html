@@ -16,9 +16,12 @@
 
 <body>
 
+<div class="bg-glow glow1"></div>
+<div class="bg-glow glow2"></div>
+
 <header class="navbar">
 
-<h2>Smart Tools</h2>
+<div class="logo">SMART TOOLS</div>
 
 <nav>
 
@@ -34,7 +37,6 @@
 
 </header>
 
-
 <div class="app">
 
 <h1 class="title">AGE <span>CALCULATOR</span></h1>
@@ -47,7 +49,7 @@
 
 </div>
 
-<button onclick="calculateAge()" class="neon-btn">
+<button onclick="startAge()" class="neon-btn">
 
 CALCULATE
 
@@ -56,38 +58,63 @@ CALCULATE
 
 <div class="result-container">
 
-<div class="card">
+<div class="card"><div id="years" class="number">--</div><div class="label">YEARS</div></div>
 
-<div id="years" class="number">--</div>
+<div class="card"><div id="months" class="number">--</div><div class="label">MONTHS</div></div>
 
-<div class="label">YEARS</div>
+<div class="card"><div id="weeks" class="number">--</div><div class="label">WEEKS</div></div>
 
-</div>
+<div class="card"><div id="days" class="number">--</div><div class="label">DAYS</div></div>
 
+<div class="card"><div id="hours" class="number">--</div><div class="label">HOURS</div></div>
 
-<div class="card">
+<div class="card"><div id="minutes" class="number">--</div><div class="label">MINUTES</div></div>
 
-<div id="months" class="number">--</div>
-
-<div class="label">MONTHS</div>
-
-</div>
-
-
-<div class="card">
-
-<div id="days" class="number">--</div>
-
-<div class="label">DAYS</div>
+<div class="card"><div id="seconds" class="number">--</div><div class="label">SECONDS</div></div>
 
 </div>
 
-</div>
+<div style="margin-top:30px">
+
+<h3>🎂 Next Birthday In</h3>
+
+<p id="nextBirthday">-- Days</p>
 
 </div>
 
+<div style="margin-top:20px">
+
+<h3>🧠 Fun Facts</h3>
+
+<p id="sleepFact"></p>
+<p id="heartFact"></p>
+<p id="blinkFact"></p>
+
+</div>
+
+<div style="margin-top:20px">
+
+<h3>🪐 Age On Other Planets</h3>
+
+<p id="mercury"></p>
+<p id="venus"></p>
+<p id="mars"></p>
+<p id="jupiter"></p>
+
+</div>
+
+</div>
 
 <footer class="footer">
+
+<div class="footer-links">
+
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+
+</div>
 
 <p>If you like my ideas, please follow me on Facebook</p>
 
@@ -102,5 +129,4 @@ Facebook
 <script src="age.js"></script>
 
 </body>
-
 </html>
